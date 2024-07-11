@@ -1,0 +1,563 @@
+@charset "UTF-8";
+
+/* Add your custom styles here */
+/* 
+----------------------------------------------------
+GLOBAL 
+---------------------------------------------------- 
+*/
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+figcaption {
+  display: none;
+}
+.threeCol {
+  width: 300px;
+}
+/*=== KeyFrames ====
+
+ animation: fade-in 2.5s ease;
+transform: background-color 0.5 ease;
+*/
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* 
+----------------------------------------------------
+	BASE TYPOGRAPHY 
+---------------------------------------------------- 
+font-family: 'Open Sans', sans-serif;
+*/
+a {
+  font-family: 'Open Sans'sans-serif;
+  text-decoration: none;
+}
+a, a:visited {
+  color: #fff;
+}
+a:hover, a:active {
+  color: #96FF00;
+	
+}
+a:hover {
+	animation: fade-in 2.5s ease;
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 75px;
+  font-weight: bold;
+}
+h2, h3, h4, h5, h6 {
+  font-family: 'Open Sana', sans-serif;
+  font-weight: bold;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 30px;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+label {
+  display: none;
+}
+#contact p {
+  color: #FFFFFF;
+}
+.green {
+  color: #96FF00;
+}
+/* 
+----------------------------------------------------
+	STRUCTURAL ELEMENTS 
+---------------------------------------------------- 
+*/
+#navBar {
+  background-color: #005fb0;
+  height: 80px;
+}
+#navBar nav ul li {
+  display: inline;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+#logo {
+  float: left;
+  margin-left: 95px;
+  margin-top: -25px;
+	animation: fade-in 2.5s ease;
+}
+#firstNav {
+  padding-top: 30px;
+}
+#navItems {
+  float: left;
+  margin-left: 140px;
+}
+#navIcons {
+  float: right;
+  margin-right: 95px;
+}
+#hero {
+  background-image: url("../images/HeroImage.png");
+  background-size: cover;
+  height: 847px;
+	width: 100%;
+	
+}
+#heroTitle {
+  padding: 250px 0px 0px 0px;
+  color: #FFFFFF;
+  margin-left: 215px;
+	animation: fade-in 2s ease;
+}
+#heroTitle h2 {
+  font-size: 36px;
+  line-height: 30px;
+	animation: fade-in 1.5s ease;
+}
+#heroTitle h3 {
+  font-size: 30px;
+  line-height: 46px;
+	animation: fade-in 2.5s ease;
+}
+#content h1 {
+  font-size: 48px;
+}
+#mainContent {
+  background-image: url("../images/ContentBackground.jpg");
+  background-size: cover;
+  height: 1000px;
+  width: auto;
+  margin-top: 50px;
+  background-repeat: no-repeat;
+}
+#exploreTitle {
+  margin-left: 95px;
+  padding-bottom: 50px;
+}
+#exploreTitle h1 {
+  color: #005FB0;
+  margin-left: 120px;
+}
+#explore {
+  float: right;
+  width: 350px;
+  padding: 25px;
+  margin-top: 100px;
+  margin-right: 95px;
+  background-color: #005FB0;
+  border-radius: 25px;
+}
+#searchTrips h1 {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 0 20px 0;
+}
+#searchTrips p {
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+#searchTrips form {
+  display: inline;
+}
+#pickAdventure {
+  width: 340px;
+  height: 26px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-style: none;
+  border-radius: 10px 10px 0px 0px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+#arrivelDate {
+  width: 161px;
+  height: 26px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-style: none;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+  margin-right: 4px;
+}
+#returnDate {
+  width: 161px;
+  height: 26px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-style: none;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+}
+#guestNum {
+  width: 340px;
+  height: 26px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-style: none;
+  border-radius: 0px 0px 0px 10px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+#searchTrips form button {
+  margin-left: 234px;
+  width: 105px;
+  height: 35px;
+  border-style: none;
+  border-radius: 0px 0px 15px 15px;
+  background-color: #96FF00;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14.5px;
+  color: #000;
+  font-weight: bold;
+}
+#searchTrips form button:hover {
+	color: #005FB0;
+  margin-left: 234px;
+  width: 105px;
+  height: 35px;
+  border-style: none;
+  border-radius: 0px 0px 15px 15px;
+  background-color: #fff;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14.5px;
+  font-weight: bold;
+}
+#services {
+  width: 1010px;
+  margin-left: 95px;
+  margin-top: -200px;
+}
+#services h1 {
+  font-size: 48px;
+  color: #005FB0;
+  margin-bottom: 50px;
+}
+#services article {
+  display: inline;
+}
+#service1 .left {
+  float: left;
+}
+#service1 .right {
+  float: right;
+  margin-right: 40px;
+}
+#service1 .center {
+  float: left;
+  margin-left: 35px;
+}
+#service1 {
+  margin-bottom: 20px;
+}
+#service2 .left {
+  float: left;
+}
+#service2 .right {
+  float: right;
+  margin-right: 40px;
+}
+#service2 .center {
+  float: left;
+  margin-left: 35px;
+}
+
+#services p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	color: #eee;
+	padding-top: 10px;
+  margin-left: 10px;
+  height: 50px;
+  width: 255px;
+}
+#services a {
+  float: right;
+  background-color: #96FF00;
+  border-radius: 15px 0px 0px 0px;
+  padding: 10px 8px 10px 8px;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+#services a:hover {
+  background-color: #005FB0;
+  border-radius: 15px 0px 0px 0px;
+  padding: 10px 8px 10px 8px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+	transform: background-color 0.5 ease;
+}
+#services article {
+	position: relative;
+}
+#services .articleHeading h1 {
+	font-size: 26px;
+	color: #96FF00;
+	font-weight: bold;
+	padding: 5px 0px 0px 5px;
+	
+}
+#services .articleHeading {
+	position: absolute;
+	width: 298px;
+	top: 8px;
+	left: 14px;
+	height: 30px;
+	padding: 10px 0 10px 10px;
+	background-color: rgba(0,95,176,0.64)
+	
+}
+#service2 .articleHeading h1 {
+	font-size: 26px;
+	color: #96FF00;
+	font-weight: bold;
+	padding: 5px 0px 0px 5px;
+	
+}
+#service2 .articleHeading {
+	position: absolute;
+	width: 298px;
+	top: 7px;
+	left: 14px;
+	height: 30px;
+	padding: 10px 0 10px 10px;
+	background-color: rgba(0,95,176,0.64)
+	
+}
+#services article:hover .articleHeading {
+	display: none;
+	transform: background-color 0.5 ease;
+}
+#service1 .articleText {
+	display: none;
+	position: absolute;
+	width: 308px;
+	bottom: 23px;
+	left: 14px;
+	right: 0;
+	background-color: rgba(0,95,176,0.64)
+}
+#service2 .articleText {
+	display: none;
+	position: absolute;
+	width: 308px;
+	bottom: 21px;
+	left: 14px;
+	right: 0;
+	background-color: rgba(0,95,176,0.64)
+}
+#services article:hover .articleText {
+	display: block;
+	transform: background-color 0.5 ease;
+}
+#meetTheBros h1 {
+  margin-left: 95px;
+  margin-top: 95px;
+  color: #005FB0;
+  margin-bottom: 50px;
+}
+#twoBors .left {
+  float: left;
+}
+#twoBors {
+  margin-left: 145px;
+}
+#twoBors .right {
+  float: right;
+  width: 500px;
+  margin-right: 230px;
+  padding-top: 50px;
+}
+#twoBorsTwo .left {
+  float: left;
+  width: 500px;
+  padding-top: 50px;
+}
+#twoBorsTwo .right {
+  float: right;
+  margin-right: 245px;
+}
+#twoBorsTwo {
+  margin-left: 95px;
+  margin-bottom: 75px;
+}
+#footerBack {
+  background-color: #005FB0;
+}
+#contact {
+  float: left;
+  width: 305px;
+  margin-left: 95px;
+}
+#questions {
+  float: right;
+  width: 305px;
+  margin-right: 95px;
+}
+#contact h1 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #96FF00;
+  margin-bottom: 5px;
+  padding-top: 75px;
+}
+#contact h2 {
+  font-weight: normal;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+#contact figure {
+  margin-top: 20px;
+}
+footer #secondNav {
+  padding-top: 135px;
+}
+#secondNav {
+  float: left;
+ margin-left: 120px;
+}
+#secondNav nav {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+#socialNav ul li {
+  display: inline;
+}
+#secondNav ul li {
+  padding-bottom: 25px;
+}
+#questions{
+	margin-right: 95px;
+}
+#questions h1 {
+  font-size: 44px;
+  color: #96FF00;
+  padding-top: 75px;
+  padding-bottom: 15px;
+}
+#questions form input {
+  display: block;
+}
+#name, #email, #message {
+  width: 300px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-style: none;
+}
+#name {
+  border-radius: 15px 15px 0px 0px;
+}
+#name, #email {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+
+  height: 26px;
+	padding: 5px;
+}
+#message {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+  height: 160px;
+  width: 300px;
+	padding-left: 5px;
+  border-radius: 0px 0px 0px 15px;
+	
+}
+#questions input::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  padding-left: 10px;
+  color: rgba(255, 255, 255, 0.75);
+}
+#questions textarea::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  padding-left: 10px;
+  color: rgba(255, 255, 255, 0.75);
+}
+#questions button {
+  margin-left: 205px;
+  margin-top: -5px;
+  width: 100px;
+  height: 35px;
+  border-style: none;
+  border-radius: 0px 0px 15px 15px;
+  background-color: #96FF00;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14.5px;
+  color: #000;
+  font-weight: bold;
+}
+#questions button:hover {
+  color: #005FB0;
+  margin-left: 204px;
+  margin-top: -5px;
+  width: 105px;
+  height: 35px;
+  border-style: none;
+  border-radius: 0px 0px 15px 15px;
+  background-color: #fff;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14.5px;
+  font-weight: bold;
+}
+#signOff {
+  background-color: #A6A6A6;
+  margin-top: 50px;
+}
+#signOff {
+  padding: 5px 0px 5px 0px;
+}
+#signOff p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  color: #96FF00;
+  text-align: center;
+}
